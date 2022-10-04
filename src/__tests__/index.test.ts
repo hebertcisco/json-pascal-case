@@ -1,13 +1,21 @@
-import uuid from '../index';
+import JsonPascalCase from '../index';
 
-describe('valid UUID', () => {
-  let VALID_UUID_REGEX: RegExp;
+describe('JsonPascalCase', () => {
+  let myObject: object;
 
   beforeAll(() => {
-    VALID_UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+    myObject = {
+      name: 'foo',
+      surname: 'bar',
+    };
   });
 
   test('should match a valid UUID', () => {
-    expect(VALID_UUID_REGEX.test(uuid.v4())).toBeTruthy();
+    const expectResult = {
+      Name: 'foo',
+      Surname: 'bar',
+    };
+    const result = JsonPascalCase.transformObject(myObject);
+    expect(result).toBeDefined();
   });
 });
