@@ -1,6 +1,7 @@
 import { pascalCase } from 'pascal-case';
+import type { TransformStringType } from '../shared/types';
 
-export function transformString(string: string): string {
-  return pascalCase(string);
-}
+export const transformString: TransformStringType = (the_string) => {
+  return pascalCase(the_string);
+};
 export default transformString;

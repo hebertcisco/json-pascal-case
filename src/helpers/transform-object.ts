@@ -1,24 +1,28 @@
 import { pascalCase } from 'pascal-case';
+import type { ObjectKeysType, ObjectValuesType, TransformObjectType } from '../shared/types';
 
-export function objectKeys(object: object) {
-  const keys: string[] = [];
-  if (object) {
-    for (let key in object) {
-      keys.push(pascalCase(key));
+export class TransformObject {
+  protected objectKeys: ObjectKeysType = (the_object) => {
+    const keys: string[] = [];
+    if (the_object) {
+      for (let key in the_object) {
+        keys.push(pascalCase(key));
+      }
     }
-  }
-  return keys;
-}
-export function objectValues(object: object) {
-  const values: any[] = [];
-  if (object) {
-    for (let value in object) {
-      values.push(value);
+    return keys;
+  };
+  protected objectValues: ObjectValuesType = (the_object) => {
+    const values: any[] = [];
+    if (the_object) {
+      for (let value in the_object) {
+        values.push(value);
+      }
     }
-  }
-  return values;
+    return values;
+  };
+  public transform: TransformObjectType = (the_object) => {
+    return Object.assign({}, this.objectKeys(the_object), this.objectValues(the_object));
+  };
 }
-export function transformObject(object: object): object {
-  return Object.assign({}, objectKeys(object), objectValues(object));
-}
-export default transformObject;
+
+export default new TransformObject();
