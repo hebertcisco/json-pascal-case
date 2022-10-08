@@ -21,7 +21,10 @@
     "url": "git+https://github.com/hebertcisco/json-pascal-case.git"
   },
   "keywords": [
-    "boilerplate",
+    "json",
+    "pascal",
+    "case",
+    "parser",
     "typescript"
   ],
   "author": "Hebert Cisco",
