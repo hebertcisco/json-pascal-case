@@ -1,7 +1,7 @@
 {
   "name": "json-pascal-case",
   "version": "0.0.1",
-  "description": "TypeScript NPM Module Boilerplate",
+  "description": "A simple JSON parser that converts keys to pascal case",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

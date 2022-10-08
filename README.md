@@ -1,7 +1,7 @@
 <p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/json-pascal-case/main/.github/images/favicon512x512-npm.png" align="center" alt=":package: json-pascal-case" />
+ <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/json-pascal-case/main/.github/images/favicon512x512-json-pascal-case.png" align="center" alt=":package: json-pascal-case" />
  <h2 align="center">:package: json-pascal-case</h2>
- <p align="center">TypeScript NPM Module Boilerplate</p>
+ <p align="center">A simple JSON parser that converts keys to pascal case</p>
   <p align="center">
     <a href="https://github.com/hebertcisco/json-pascal-case/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/json-pascal-case?style=flat&color=336791" />
@@ -37,8 +37,7 @@
   </p>
 <p align="center">Did you like the project? Please, considerate <a href="https://www.buymeacoffee.com/hebertcisco">a donation</a> to help improve!</p>
 
-<p align="center"><strong>TypeScript NPM Module Boilerplate</strong>✨</p>
-
+<p align="center"><strong>A simple JSON parser that converts keys to pascal case</strong>✨</p>
 
 # Getting started
 
@@ -46,24 +45,23 @@
 
 > Clone this repository: `git clone https://github.com/hebertcisco/json-pascal-case`
 
-### Open the directory and run the script line:
+### Open the directory and run the script line
 
 ```bash
 cd json-pascal-case 
 ```
+
 ```bash
 npm i  # or yarn
 ```
+
 ```bash
 rm -rf .git && git init && git add . && git commit -m "Initial commit" #Optional
 ```
+
 Or create use the button "Use this template"
 
 Edit the Icon on Figma:
-
-<a href="https://www.figma.com/file/vpevGX3j9tmtW8OyLQ9eUm/json-pascal-case-icon?node-id=0%3A1">
-   <img alt="Figma Icon" src="https://raw.githubusercontent.com/hebertcisco/json-pascal-case/main/.github/images/figma-badge.png"/>
-</a>
 
 ## 🤝 Contributing
 
@@ -78,8 +76,6 @@ Or buy me a coffee 🙌🏾
 <a href="https://www.buymeacoffee.com/hebertcisco">
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
-
-[![codecov](https://codecov.io/gh/hebertcisco/json-pascal-case/branch/main/graph/badge.svg?token=Q9fr548J0D)](https://codecov.io/gh/hebertcisco/json-pascal-case)
 
 ## 📝 License
 
