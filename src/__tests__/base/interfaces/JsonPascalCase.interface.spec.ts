@@ -1,4 +1,7 @@
-import type { TransformArrayOfObjectsType, TransformArrayOfStringsType } from '../../../shared/types/transform-array.type';
+import type {
+  TransformArrayOfObjectsType,
+  TransformArrayOfStringsType,
+} from '../../../shared/types/transform-array.type';
 import type { TransformObjectType } from '../../../shared/types/transform-object.type';
 import type { TransformStringType } from '../../../shared/types/transform-string.type';
 import { JsonPascalCaseInterface } from '../../../base/interfaces/JsonPascalCase.interface';

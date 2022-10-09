@@ -5,7 +5,7 @@ export class TransformObject {
   protected objectKeys: ObjectKeysType = (the_object) => {
     const keys: string[] = [];
     if (the_object) {
-      for (let key in the_object) {
+      for (const key in the_object) {
         keys.push(pascalCase(key));
       }
     }
