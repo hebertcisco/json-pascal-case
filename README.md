@@ -43,25 +43,95 @@
 
 ## Installation
 
-> Clone this repository: `git clone https://github.com/hebertcisco/json-pascal-case`
-
-### Open the directory and run the script line
+> Install with yarn or npm: `yarn` or `npm`:
 
 ```bash
-cd json-pascal-case 
+# yarn
+yarn add json-pascal-case
 ```
 
 ```bash
-npm i  # or yarn
+# npm
+npm i json-pascal-case --save
 ```
 
-```bash
-rm -rf .git && git init && git add . && git commit -m "Initial commit" #Optional
+### Import the lib with es6 or cjs
+
+```mjs
+// es6
+import jsonPascalCase from 'json-pascal-case';
 ```
 
-Or create use the button "Use this template"
+```cjs
+// cjs
+const jsonPascalCase = require('json-pascal-case');
+```
 
-Edit the Icon on Figma:
+### Usage examples
+
+#### transformArrayOfObjects
+
+```ts
+#!/usr/bin/env node
+import jsonPascalCase from 'json-pascal-case';
+
+const array_of_objects = [
+    {
+        test: 'test',
+        test2: 'test2',
+    },
+    {
+        test: 'test',
+        test2: 'test2',
+    },
+];
+
+const result = jsonPascalCase.transformArrayOfObjects(array_of_objects);
+
+console.log(result);
+```
+
+#### transformObject
+
+```ts
+#!/usr/bin/env node
+import jsonPascalCase from 'json-pascal-case';
+
+const my_object = {
+    test: 'test',
+    test2: 'test2',
+};
+
+const result = jsonPascalCase.transformObject(my_object);
+
+console.log(result);
+```
+
+#### transformString
+
+```ts
+#!/usr/bin/env node
+import jsonPascalCase from 'json-pascal-case';
+
+const my_string = "my text in lower case";
+
+const result = jsonPascalCase.transformString(my_string);
+
+console.log(result);
+```
+
+#### transformArrayOfStrings
+
+```ts
+#!/usr/bin/env node
+import jsonPascalCase from 'json-pascal-case';
+
+const my_strings = ["text1", "text2"];
+
+const result = jsonPascalCase.transformArrayOfStrings(my_strings);
+
+console.log(result);
+```
 
 ## 🤝 Contributing
 
