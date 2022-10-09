@@ -14,14 +14,23 @@ export class TransformObject {
   protected objectValues: ObjectValuesType = (the_object) => {
     const values: any[] = [];
     if (the_object) {
-      for (let value in the_object) {
+      Object.values(the_object).forEach((value) => {
         values.push(value);
-      }
+      });
     }
     return values;
   };
   public transform: TransformObjectType = (the_object) => {
-    return Object.assign({}, this.objectKeys(the_object), this.objectValues(the_object));
+    const keys = this.objectKeys(the_object);
+    const values = this.objectValues(the_object);
+
+    const result: any = {};
+
+    for (let i = 0; i < keys.length; i++) {
+      result[keys[i]] = values[i];
+    }
+
+    return result;
   };
 }
 
