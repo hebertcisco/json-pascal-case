@@ -21,10 +21,10 @@ export class TransformObject {
     return values;
   };
   public transform: TransformObjectType = (the_object) => {
-    const keys = this.objectKeys(the_object);
-    const values = this.objectValues(the_object);
+    const keys = this.objectKeys(the_object as object);
+    const values = this.objectValues(the_object as object);
 
-    const result: any = {};
+    const result: any = {} as object;
 
     for (let i = 0; i < keys.length; i++) {
       result[keys[i]] = values[i];
