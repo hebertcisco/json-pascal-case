@@ -1,1 +1,1 @@
-export type TransformStringType = (the_string: string) => string;
+export type TransformStringType = (the_string?: string) => string;
