@@ -18,5 +18,11 @@ describe('TransformObject', () => {
         Test2: 'value' + 2,
       });
     });
+    it('should return an mocked object', () => {
+      const result = transformObject.transform();
+      expect(result).toEqual({
+        Key: 'value',
+      });
+    });
   });
 });
