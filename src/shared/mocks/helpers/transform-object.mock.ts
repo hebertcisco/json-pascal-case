@@ -3,7 +3,7 @@ import type { TransformObjectType } from '../../types/transform-object.type';
 
 export class MockTransformObject extends TransformObject {
   public transform: TransformObjectType = (the_object) => {
-    if (!the_object || typeof the_object !== 'object') {
+    if (!the_object) {
       return {
         Key: 'value',
       };
