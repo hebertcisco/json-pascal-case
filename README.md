@@ -41,6 +41,10 @@
 
 # Getting started
 
+[![codecov](https://codecov.io/gh/hebertcisco/json-pascal-case/branch/main/graph/badge.svg?token=FQZE8BEPDG)](https://codecov.io/gh/hebertcisco/json-pascal-case)
+
+[![Node.js build and publish package](https://github.com/hebertcisco/json-pascal-case/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/hebertcisco/json-pascal-case/actions/workflows/npm-publish.yml)
+
 ## Installation
 
 > Install with yarn or npm: `yarn` or `npm`:
