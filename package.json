@@ -1,6 +1,6 @@
 {
   "name": "json-pascal-case",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple JSON parser that converts keys to pascal case",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
